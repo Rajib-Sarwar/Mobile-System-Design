@@ -3,12 +3,12 @@
 -------------------------------------------------
 FeedViewController  
  ├──► FeedPresenter.getInitialPosts()  
- ├──► ├──► FeedRepository.getPosts()  
- ├──► ├──► ├──► (If Online) Fetch from FeedAPIService  
- ├──► ├──► ├──► (If Offline) Fetch from LocalStorageManager  
-           └──► Return posts to FeedPresenter  
- ├──► ├──► FeedPresenter updates FeedViewController  
-      └──► UI updates with fetched posts  
+ .....├──► FeedRepository.getPosts()  
+ ..........├──► (If Online) Fetch from FeedAPIService  
+ ..........├──► (If Offline) Fetch from LocalStorageManager  
+ ..........└──► Return posts to FeedPresenter  
+ .....├──► FeedPresenter updates FeedViewController  
+ .....└──► UI updates with fetched posts  
 
 -------------------------------------------------
 ⚡ 2️⃣ Getting New Posts in Real-Time (Using SSE)
