@@ -3,11 +3,11 @@
 -------------------------------------------------
 FeedViewController  
  ├──► FeedPresenter.getInitialPosts()  
-      ├──► FeedRepository.getPosts()  
-           ├──► (If Online) Fetch from FeedAPIService  
-           ├──► (If Offline) Fetch from LocalStorageManager  
+ ├──► ├──► FeedRepository.getPosts()  
+ ├──► ├──► ├──► (If Online) Fetch from FeedAPIService  
+ ├──► ├──► ├──► (If Offline) Fetch from LocalStorageManager  
            └──► Return posts to FeedPresenter  
-      ├──► FeedPresenter updates FeedViewController  
+ ├──► ├──► FeedPresenter updates FeedViewController  
       └──► UI updates with fetched posts  
 
 -------------------------------------------------
